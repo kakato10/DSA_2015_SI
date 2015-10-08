@@ -1,7 +1,6 @@
 public class SequentialList {
     private static final int INITIAL_SIZE = 2;
     private static final double GROWING_FACTOR = 2;
-    private static final double SHRINKING_FACTOR = 4;
     private int elementsCount;
     private int[] array;
 
