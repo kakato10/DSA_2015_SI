@@ -4,11 +4,6 @@ public class SequentialList {
     private int elementsCount;
     private int[] array;
 
-    public SequentialList() {
-        this.array = new int[INITIAL_SIZE];
-        this.elementsCount = 0;
-    }
-
     private void tryGrow() {
         if (this.elementsCount == this.array.length) {
             int[] newArray = new int[(int) (this.array.length * this.GROWING_FACTOR)];
@@ -19,6 +14,11 @@ public class SequentialList {
         }
     }
 
+    public SequentialList() {
+        this.array = new int[INITIAL_SIZE];
+        this.elementsCount = 0;
+    }
+    
     public void add(int newElement) {
         this.tryGrow();
         this.array[this.elementsCount] = newElement;
