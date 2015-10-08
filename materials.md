@@ -1,6 +1,3 @@
-Materials
-=====================
-
 #Data structures
 In order to make our algorithms effective we have to find the right data structures to use. Every data structure is useful in different situations. So there are three questions that we have to answer:
 * What data structures are on our disposal?
