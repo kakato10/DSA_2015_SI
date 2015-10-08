@@ -26,5 +26,3 @@ Here's another table that show the names of these implementations in the respect
 | C# | `List`  | `LinkedList` | `Stack` | `Queue` | `Dictionary` | `HashSet` | `SortedDictionary` |
 | Python | `list`  | `-` | `-` | `-` | `dict` | `set` | `OrderedDict` |
 | JavaScript | `Array`  | `-` | `Array` | `Array` | `Object` | `-` | `-` |
-
-* NDS - Not Described in Standard (i.e. the language has multiple implementations that use different algorithms)
