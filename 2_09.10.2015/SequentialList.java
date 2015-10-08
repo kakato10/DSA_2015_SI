@@ -1,7 +1,4 @@
-/**
- * Created by kakato10 on 10/7/2015.
- */
-public class SequentialList implements ListInterface {
+public class SequentialList {
     private static final int INITIAL_SIZE = 2;
     private static final double GROWING_FACTOR = 2;
     private static final double SHRINKING_FACTOR = 4;
@@ -23,32 +20,10 @@ public class SequentialList implements ListInterface {
         }
     }
 
-    public void tryShrink() {
-        if (this.elementsCount == this.array.length / 4) {
-            int[] newArray = new int[(int) (this.array.length / this.GROWING_FACTOR)];
-            for (int i = 0; i < elementsCount; i++) {
-                newArray[i] = this.array[i];
-            }
-            this.array = newArray;
-        }
-    }
-
     public void add(int newElement) {
         this.tryGrow();
         this.array[this.elementsCount] = newElement;
         this.elementsCount++;
-    }
-
-    public void deleteAt(int index) {
-        if (index >= this.elementsCount) {
-            System.out.println("There is no such element!");
-            return;
-        }
-        for (int i = index + 1; i < elementsCount; i++) {
-            this.array[i - 1] = this.array[i];
-        }
-        this.elementsCount--;
-        tryShrink();
     }
 
     public int get(int index) {
@@ -87,8 +62,7 @@ public class SequentialList implements ListInterface {
 
     public void print() {
         for (int i = 0; i < this.array.length; i++) {
-            int element = this.array[i];
-            System.out.println(element);
+            System.out.println(this.array[i]);
         }
     }
 }
