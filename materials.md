@@ -1,15 +1,15 @@
 Materials
 =====================
 
-##Data structures
+#Data structures
 In order to make our algorithms effective we have to find the right data structures to use. Every data structure is useful in different situations. So there are three questions that we have to answer:
 * What data structures are on our disposal?
 * Which of them are appropriate for our goals?
 * What are their benefits and downsides?
 
-Basically, sometimes it's not that easy to choose the correct data structure. Here's a table that could help you in making that choise. (The table will be updated for every exercise that we have)
+##Data structures comparison
 
-###Data structures comparison
+Basically, sometimes it's not that easy to choose the correct data structure. Here's a table that could help you in making that choise. (The table will be updated for every exercise that we have)
 
 | Data structure  | Get | Append | Insert | RemoveAt  | Search | Random Access? |
 |-----------------|:---:|:------:|:------:|:---------:|:------:|:------:|
@@ -17,10 +17,10 @@ Basically, sometimes it's not that easy to choose the correct data structure. He
 
 * Subscript <sub>A</sub> means that the complexity is amortized.
 
+##Standart library implementations
+
 The widely used data structures already have implementations in most of the programming languages.
 Here's another table that show the names of these implementations in the respective languages.
-
-###Standart library implementations
 
 | Language  | SequentialList | LinkedList | Stack | Queue  | HashMap | Set | BST | Sorting algorithm
 |-----------------|:---:|:------:|:------:|:---------:|:------:|:------:|:------:|:------:|
