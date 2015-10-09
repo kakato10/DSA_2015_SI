@@ -32,7 +32,7 @@ public interface ListInterface {
     //Returns a new list with the same elements, but in reversed order.
     public SequentialList reverse();
 
-    //Checks of both lists contain the same elements in the same order.
+    //Checks if both lists contain the same elements in the same order.
     public boolean equals(SequentialList otherList);
 
     //Returns new list with all unique elements of the origin list in the same order, in that they're found.

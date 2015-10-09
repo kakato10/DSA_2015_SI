@@ -43,7 +43,7 @@ public class SequentialList {
     }
 
     public int indexOf(int element) {
-        for (int i = 0; i < elementsCount; i++) {
+        for (int i = 0; i < this.elementsCount; i++) {
             if (element == this.array[i]) {
                 return i;
             }
@@ -53,7 +53,7 @@ public class SequentialList {
 
     public SequentialList copy() {
         SequentialList listCopy = new SequentialList();
-        for (int i = 0; i < elementsCount; i++) {
+        for (int i = 0; i < this.elementsCount; i++) {
             listCopy.add(this.array[i]);
         }
         return listCopy;
