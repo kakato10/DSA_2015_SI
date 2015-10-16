@@ -4,7 +4,7 @@ In order to make our algorithms effective we have to find the right data structu
 * Which of them are appropriate for our goals?
 * What are their benefits and downsides?
 
-##Data structures
+##Types
 
 ###Linked List
 * https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html - a more detailed explaination about linked lists and their power. Visualisations included!;
