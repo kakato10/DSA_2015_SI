@@ -44,8 +44,8 @@ public interface LinkedListInterface {
     //Returns new list with all unique elements of the original list in the same order, in that they're found.
     public LinkedList removeDuplicates();
 
-    //Inserts all elements of @otherList that are between @start and @end including @start
-    public void splice(LinkedList otherList, Node start, Node end);
+    //Inserts coppies of all elements of @otherList that are between @start and @end including @start
+    public void splice(Node start, Node end);
 
     //Returns a new list with all elements on the right of @node including @node and removes them from the original list
     //Тhe rest (to the left of @node) should remain in the current list.
