@@ -1,7 +1,7 @@
 Stacks and Queues
 =====================
 
-#Brackets matcher
+#Task 1: Brackets matcher
 Write a Java class BracketsMatcher that contains the following function:
 
 ```Java
@@ -36,7 +36,7 @@ Output:
 false
 ```
 
-#Function call stack
+#Task 2: Function call stack
 Write a Java class functionCallStack, that contains the following function:
 
 ``` JAVA
@@ -65,7 +65,7 @@ The elements contained in the stack that will be the result should be:
 main
 ```
 
-#Queued Stack
+#Task 3: Queued Stack
 Write a Java class called Stack, that has the following interface:
 ```Java
 public interface StackInterface {
