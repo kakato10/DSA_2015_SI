@@ -40,7 +40,7 @@ false
 Write a Java class functionCallStack, that contains the following function:
 
 ``` JAVA
-public static stack<String> biggestCallStack(String main, String[] functions)
+public static Stack<String> biggestCallStack(String main, String[] functions)
 ``` 
 
 * ```main``` is the main function that you'll have to read;
