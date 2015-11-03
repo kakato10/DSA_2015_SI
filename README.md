@@ -15,3 +15,6 @@ Most, if not all, code snipets inside that repository will be written in Java. T
 Contacts:
 * svetimir.ignatov@gmail.com
 * pfk_milan@abv.bg (send any written tasks here)
+
+###PS:
+Here's a link to the table with the results from your tasks for homework: https://docs.google.com/spreadsheets/d/1usinRhZSp0TKpHEAf1QqDcDtpJjgV_qIJhfS0Mag1ug/edit?usp=sharing
