@@ -10,6 +10,11 @@ In order to make our algorithms effective we have to find the right data structu
 * https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html - a more detailed explaination about linked lists and their power. Visualisations included!;
 * http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html - that's the documentation about the implementation of linked lists in Java. Take a look at them, so that you can learn something more. This might help you in writing your own implementation.
 
+
+###Stacks and queues
+* https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues - the things that wikibooks has to say about thoose data structures;
+* http://introcs.cs.princeton.edu/java/43stack/ - a "bit" longer view over stacks and queues;
+
 ##Data structures comparison
 
 Basically, sometimes it's not that easy to choose the correct data structure. Here's a table that could help you in making that choise. (The table will be updated for every exercise that we have)
@@ -18,6 +23,8 @@ Basically, sometimes it's not that easy to choose the correct data structure. He
 |-----------------|:---:|:------:|:------:|:---------:|:------:|:------:|
 | Sequential List (Dynamic Array)  | `O(1)`  | `O(1)`<sub>A</sub> | `O(n)` | `O(n)` | `O(n)` | True |
 | Linked List | `O(n)`  | `O(1)` | `O(1)` | `O(1)` | `O(n)` | True |
+| Stack | `O(1)`  | `O(1)` | `-` | `O(1)` | `-` | False |
+| Queue | `O(1)`  | `O(1)` | `-` | `O(1)` | `-` | False |
 
 * Subscript <sub>A</sub> means that the complexity is amortized.
 
