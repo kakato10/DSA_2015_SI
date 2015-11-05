@@ -24,10 +24,9 @@ public interface BookWordsAnalyzer {
 ```
 
 The book that the class should analyze is a string, in which the words will be separated
-by a simple space. Every word will consist only of lower case letters. The words will be in the following format: 
-```t_word``` 
-* ```t``` is the type of the word - n for noun, a for adjective and v for verb;
-* ```word``` will be the word itself;
+by a simple space. Every word will consist only of lower case letters. The words will be in the following format: `t_word` 
+* `t` is the type of the word - n for noun, a for adjective and v for verb;
+* `word` will be the word itself;
 
 ###Example usage
 
