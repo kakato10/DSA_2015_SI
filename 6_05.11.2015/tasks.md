@@ -17,21 +17,21 @@ public interface BookWordsAnalyzer {
     //returns the count of appearances of the mostly used word/words
     int mostlyUsedWordAppearances();
 
-    //returns what type of words is used the most (repeated words does matter)
+    //returns what type of words is used the most (repeated words do matter)
     //adjectives, nouns, verbs, unknown
     String mostlyUsedWordType();
 }
 ```
 
 The book that the class should analyze is a string, in which the words will be separated
-by a simple space. Every word will consist only of lower case letters. The words will be in the following format
-t_word. 
-* t is the type of the word: n for nount, a for adjective and v for verb;
-* word will be the word itself;
+by a simple space. Every word will consist only of lower case letters. The words will be in the following format:
+```t_word```. 
+* ```t``` is the type of the word - n for noun, a for adjective and v for verb;
+* ```word``` will be the word itself;
 
 ###Example usage
 
-```
+```Java
 readBook("a_strange n_man v_is a_strange n_man");
 wordOccurrences("strange"); //2
 wordOccurrences("man"); //2
