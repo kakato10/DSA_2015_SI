@@ -40,4 +40,4 @@ mostlyUsedWordAppearances(); //2
 mostlyUsedWordType(); //unknown
 ```
 
-PS: Think very good of the algorithm that you'll implement. There are going to be standings, how fast does your program run!
+####PS: Think very good of the algorithm that you'll implement. There are going to be standings, how fast does your program run! Yep, consider this as a competition!!!
