@@ -35,7 +35,7 @@ readBook("a_strange n_man v_is a_strange n_man");
 wordOccurrences("strange"); //2
 wordOccurrences("man"); //2
 wordOccurrences("is"); //1
-uniqueWordsCount(); //3
+uniqueWordsCount(); //1
 mostlyUsedWordAppearances(); //2
 mostlyUsedWordType(); //unknown
 ```
