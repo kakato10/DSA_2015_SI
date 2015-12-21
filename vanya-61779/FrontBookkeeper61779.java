@@ -3,17 +3,17 @@ import java.util.LinkedList;
 
 import javax.swing.SpinnerListModel;
 
-
 public class FrontBookkeeper61779 implements IFrontBookkeeper{
 	public HashMap<String,Unit> units = new HashMap<String,Unit>();
-	
+	private String Result = null;
 	
 	@Override
 	public String updateFront(String[] news) {
+	
 		for(int p = 0; p < news.length;p++){
 			String[] splittedNews = news[p].split(" ");
 			if(splittedNews.length == 2 && splittedNews[0].equals("show")){
-				System.out.println(units.get(splittedNews[1]).getSoldiers().toString()); 
+				Result +=units.get(splittedNews[1]).getSoldiers().toString()+"\n"; 
 			}
 			else if(splittedNews.length == 4 && splittedNews[1].equals("attached") ){
 				attachUnit(splittedNews[0],splittedNews[3]);
@@ -36,10 +36,10 @@ public class FrontBookkeeper61779 implements IFrontBookkeeper{
 			
 		}
 		
-		return null;
+		return Result;
 	}
 
-    private String addUnit(String[] array){
+    private void addUnit(String[] array){
     	if(!Character.toString(array[1].charAt(1)).equals("]")){
     		String[] numbers = array[1].substring(1,array[1].length()-1).split(",");
         	
@@ -52,13 +52,11 @@ public class FrontBookkeeper61779 implements IFrontBookkeeper{
 			newUnit.setSoldiers(numbersInt);
 			newUnit.setName(array[0]);
 			units.put(array[0],newUnit);
-			return null;
     	}
     	Unit newUnit = new Unit();
 		newUnit.setSoldiers(new LinkedList());
 		newUnit.setName(array[0]);
 		units.put(array[0],newUnit);	
-    	return null;
 		
 	}
     
@@ -84,7 +82,7 @@ public class FrontBookkeeper61779 implements IFrontBookkeeper{
 		    }
 		}
 		String result = unitsContainingSoldiers.toString().replace('[', ' ').replace(']',' ');
-		System.out.println(result.trim());
+		Result += result.trim()+ "\n";
     }
     
     public void attachSoldiersOnPosition(int soldierId,String nameUnitToAtach,String nameUnit){
